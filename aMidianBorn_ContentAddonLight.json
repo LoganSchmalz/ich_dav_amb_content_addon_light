@@ -1,0 +1,77 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Exit-9B/DynamicArmorVariants/main/docs/DynamicArmorVariants.schema.json",
+  "variants": [
+    {
+      "name": "ImprovedClosefacedHelmetsDAVAMB",
+      "displayName": "$Improved Closefaced Helmets D A V A M B",
+      "linkTo": "DAV_HiddenHelmet",
+      "overrideHead": "showHead",
+      "replaceByForm": {
+	"aMidianBorn_ContentAddonLight.esp|043261": "aMidianBorn_ContentAddonLight.esp|05b1c7",
+	"aMidianBorn_ContentAddonLight.esp|043260": "aMidianBorn_ContentAddonLight.esp|05b1c8"
+      }
+    },
+    {
+      "name": "ImprovedClosefacedHelmetsArgDAVAMB",
+      "displayName": "$Improved Closefaced Helmets Arg D A V A M B",
+      "linkTo": "DAV_HiddenHelmet",
+      "overrideHead": "showHead",
+      "replaceByForm": {
+	"aMidianBorn_ContentAddonLight.esp|043261": "aMidianBorn_ContentAddonLight.esp|05b1c9",
+	"aMidianBorn_ContentAddonLight.esp|043260": "aMidianBorn_ContentAddonLight.esp|05b1ca"
+      }
+    },
+    {
+      "name": "ImprovedClosefacedHelmetsKhaDAVAMB",
+      "displayName": "$Improved Closefaced Helmets Kha D A V A M B",
+      "linkTo": "DAV_HiddenHelmet",
+      "overrideHead": "showHead",
+      "replaceByForm": {
+	"aMidianBorn_ContentAddonLight.esp|043261": "aMidianBorn_ContentAddonLight.esp|05b1cb",
+	"aMidianBorn_ContentAddonLight.esp|043260": "aMidianBorn_ContentAddonLight.esp|05b1cc"
+      }
+    },
+    {
+      "name": "ImprovedClosefacedHelmetsOrcDAVAMB",
+      "displayName": "$Improved Closefaced Helmets Orc D A V A M B",
+      "linkTo": "DAV_HiddenHelmet",
+      "overrideHead": "showHead",
+      "replaceByForm": {
+    "aMidianBorn_ContentAddonLight.esp|043261": "aMidianBorn_ContentAddonLight.esp|05b1cd",
+	"aMidianBorn_ContentAddonLight.esp|043260": "aMidianBorn_ContentAddonLight.esp|05b1ce"
+      }
+    }
+  ],
+  "states": [
+    {
+      "variant": "ImprovedClosefacedHelmetsDAVAMB",
+      "conditions": [
+        "GetIsRace ArgonianRace == 0 AND",
+        "GetIsRace ArgonianRaceVampire == 0 AND",
+        "GetIsRace KhajiitRace == 0 AND",
+        "GetIsRace KhajiitRaceVampire == 0"
+      ]
+    },
+    {
+      "variant": "ImprovedClosefacedHelmetsArgDAVAMB",
+      "conditions": [
+        "GetIsRace ArgonianRace == 1 OR",
+        "GetIsRace ArgonianRaceVampire == 1"
+      ]
+    },
+    {
+      "variant": "ImprovedClosefacedHelmetsKhaDAVAMB",
+      "conditions": [
+        "GetIsRace KhajiitRace == 1 OR",
+        "GetIsRace KhajiitRaceVampire == 1"
+      ]
+    },
+    {
+      "variant": "ImprovedClosefacedHelmetsOrcDAVAMB",
+      "conditions": [
+        "GetIsRace OrcRace == 1 OR",
+        "GetIsRace OrcRaceVampire == 1"
+      ]
+    }
+  ]
+}
